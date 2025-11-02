@@ -1,0 +1,33 @@
+
+Učitano 168 uzoraka za test evaluaciju.
+Težine modela SimpleCNN uspešno učitane.
+
+--- Pokretanje Evaluacije na Test Skupu (168 uzoraka) ---
+
+--- KONAČNA EVALUACIJA: SimpleCNN ---
+Evalucija modela....
+Test Loss: 0.5237
+Test Accuracy: 0.7619
+Test F1Score: 0.4118
+
+--- Classification Report ---
+              precision    recall  f1-score   support
+
+     Klasa 0       0.91      0.80      0.85       143
+     Klasa 1       0.33      0.56      0.41        25
+
+    accuracy                           0.76       168
+   macro avg       0.62      0.68      0.63       168
+weighted avg       0.82      0.76      0.79       168
+
+
+--- Matrica Konfuzije (Confusion Matrix) ---
+Predviđena klasa  Klasa 0  Klasa 1
+Stvarna klasa                     
+Klasa 0               114       29
+Klasa 1                11       14
+Sve uspesno zavrseno.
+
+
+Rezultati su uspešno sačuvani u 'training_evaluation/results/SimpleCNN_evaluation_results.txt'
+Test done.

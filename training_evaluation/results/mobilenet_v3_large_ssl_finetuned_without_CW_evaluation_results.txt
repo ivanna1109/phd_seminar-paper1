@@ -1,0 +1,24 @@
+
+--- KONAČNA EVALUACIJA: mobilenet_v3_large_ssl_finetuned ---
+Evalucija modela....
+Test Loss: 0.6057
+Test Accuracy: 0.8512
+Test F1Score: 0.0000
+
+--- Classification report ---
+              precision    recall  f1-score   support
+
+     Klasa 0       0.85      1.00      0.92       143
+     Klasa 1       0.00      0.00      0.00        25
+
+    accuracy                           0.85       168
+   macro avg       0.43      0.50      0.46       168
+weighted avg       0.72      0.85      0.78       168
+
+
+--- Matrica Konfuzije (Confusion matrix) ---
+Predviđena Klasa  Klasa 0  Klasa 1
+Stvarna Klasa                     
+Klasa 0               143        0
+Klasa 1                25        0
+Sve uspesno zavrseno.

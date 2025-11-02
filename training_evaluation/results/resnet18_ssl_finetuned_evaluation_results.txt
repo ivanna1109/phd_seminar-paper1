@@ -1,0 +1,24 @@
+
+--- KONAČNA EVALUACIJA: resnet18_ssl_finetuned ---
+Evalucija modela....
+Test Loss: 0.8286
+Test Accuracy: 0.8571
+Test F1Score: 0.5862
+
+--- Classification report ---
+              precision    recall  f1-score   support
+
+     Klasa 0       0.94      0.89      0.91       143
+     Klasa 1       0.52      0.68      0.59        25
+
+    accuracy                           0.86       168
+   macro avg       0.73      0.78      0.75       168
+weighted avg       0.88      0.86      0.86       168
+
+
+--- Matrica Konfuzije (Confusion matrix) ---
+Predviđena Klasa  Klasa 0  Klasa 1
+Stvarna Klasa                     
+Klasa 0               127       16
+Klasa 1                 8       17
+Sve uspesno zavrseno.

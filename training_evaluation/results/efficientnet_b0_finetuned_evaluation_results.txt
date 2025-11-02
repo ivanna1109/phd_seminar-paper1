@@ -1,0 +1,24 @@
+
+--- KONAČNA EVALUACIJA: efficientnet_b0_finetuned ---
+Evalucija modela....
+Test Loss: 0.6076
+Test Accuracy: 0.8214
+Test F1Score: 0.4000
+
+--- Classification report ---
+              precision    recall  f1-score   support
+
+     Klasa 0       0.90      0.90      0.90       143
+     Klasa 1       0.40      0.40      0.40        25
+
+    accuracy                           0.82       168
+   macro avg       0.65      0.65      0.65       168
+weighted avg       0.82      0.82      0.82       168
+
+
+--- Matrica Konfuzije (Confusion matrix) ---
+Predviđena Klasa  Klasa 0  Klasa 1
+Stvarna Klasa                     
+Klasa 0               128       15
+Klasa 1                15       10
+Sve uspesno zavrseno.

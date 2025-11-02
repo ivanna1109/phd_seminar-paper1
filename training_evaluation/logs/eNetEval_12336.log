@@ -1,0 +1,33 @@
+
+Učitano 168 uzoraka za test evaluaciju.
+Težine modela efficientnet_b0_finetuned uspešno učitane i model je spreman za evaluaciju.
+
+--- Pokretanje Evaluacije na Test Skupu (168 uzoraka) ---
+
+--- KONAČNA EVALUACIJA: efficientnet_b0_finetuned ---
+Evalucija modela....
+Test Loss: 0.6076
+Test Accuracy: 0.8214
+Test F1Score (Binary): 0.4000
+
+--- Classification Report ---
+              precision    recall  f1-score   support
+
+     Klasa 0       0.90      0.90      0.90       143
+     Klasa 1       0.40      0.40      0.40        25
+
+    accuracy                           0.82       168
+   macro avg       0.65      0.65      0.65       168
+weighted avg       0.82      0.82      0.82       168
+
+
+--- Matrica Konfuzije (Confusion Matrix) ---
+Predviđena Klasa  Klasa 0  Klasa 1
+Stvarna Klasa                     
+Klasa 0               128       15
+Klasa 1                15       10
+Sve uspesno zavrseno.
+
+
+Rezultati su uspešno sačuvani u 'training_evaluation/results/efficientnet_b0_finetuned_evaluation_results.txt'
+Test done.

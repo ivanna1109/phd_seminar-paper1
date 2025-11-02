@@ -1,0 +1,5 @@
+
+Učitano 168 uzoraka za test evaluaciju.
+Klasifikacioni sloj ResNet18 je modifikovan na 2 izlaznih klasa.
+Greška pri učitavanju modela resnet18_finetuned: [Errno 2] No such file or directory: '/home/ivanam/Seminar1/training/finetuned_models/resNet/resnet18_finetuned_best_model.pth'
+Test done.

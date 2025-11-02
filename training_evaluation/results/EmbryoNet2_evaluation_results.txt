@@ -1,0 +1,24 @@
+
+--- KONAČNA EVALUACIJA: EmbryoNet2 ---
+Evalucija modela....
+Test Loss: 0.3929
+Test Accuracy: 0.8690
+Test F1Score: 0.6333
+
+--- Classification Report ---
+              precision    recall  f1-score   support
+
+     Klasa 0       0.95      0.89      0.92       143
+     Klasa 1       0.54      0.76      0.63        25
+
+    accuracy                           0.87       168
+   macro avg       0.75      0.82      0.78       168
+weighted avg       0.89      0.87      0.88       168
+
+
+--- Matrica Konfuzije (Confusion Matrix) ---
+Predviđena klasa  Klasa 0  Klasa 1
+Stvarna klasa                     
+Klasa 0               127       16
+Klasa 1                 6       19
+Sve uspesno zavrseno.
