@@ -1,0 +1,5 @@
+/var/spool/slurmd/job12306/slurm_script: line 16: module: command not found
+Traceback (most recent call last):
+  File "/home/ivanam/Seminar1/training/efficientNet/train_enet.py", line 5, in <module>
+    from training.efficientNet.prepare_model import clean_state_dict_keys
+ModuleNotFoundError: No module named 'training'

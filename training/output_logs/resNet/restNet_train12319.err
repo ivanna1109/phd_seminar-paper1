@@ -1,0 +1,2 @@
+/var/spool/slurmd/job12319/slurm_script: line 16: module: command not found
+/opt/miniconda/3.10/bin/python: can't open file '/home/ivanam/Seminar1/training/resNet/train_resNet.py': [Errno 2] No such file or directory

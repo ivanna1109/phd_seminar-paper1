@@ -1,0 +1,28 @@
+
+Koristi se uređaj: cpu
+
+--- Analiza Trening Skupa (Originalno) ---
+Klasa 0 (Većinska): 459
+Klasa 1 (Manjinska): 79
+Koristi se faktor ponavljanja (minority_repeat_train): 5 (Optimalno: 6)
+Izračunate težine klase (za CrossEntropyLoss, Klasa 0:Klasa 1): 0.59:3.41
+Dataset inicijalizovan. Originalna veličina: 538. Efektivna veličina: 854.
+Dataset inicijalizovan. Originalna veličina: 134. Efektivna veličina: 134.
+
+TRENING SET (Efektivna veličina, oversampling): 854 uzoraka.
+VALIDACIONI SET (Originalna veličina): 134 uzoraka.
+Koristi se CrossEntropyLoss sa izračunatim težinama klase!
+
+--- Pokretanje Supervised Treninga za EmbryoNet2 model EmbryoNet2_FT_AdamW ---
+Epoch [1/75] Loss: 0.5005 | T_Acc: 0.5410 | V_Acc: 0.1493 | V_F1: 0.2597
+   --> Sačuvan najbolji model EmbryoNet2!
+Epoch [2/75] Loss: 0.3775 | T_Acc: 0.5609 | V_Acc: 0.1493 | V_F1: 0.2597
+   --> Nema poboljšanja. Patience brojač: 1/10
+Epoch [3/75] Loss: 0.3662 | T_Acc: 0.5047 | V_Acc: 0.1493 | V_F1: 0.2597
+   --> Nema poboljšanja. Patience brojač: 2/10
+Epoch [4/75] Loss: 0.3913 | T_Acc: 0.5785 | V_Acc: 0.1493 | V_F1: 0.2597
+   --> Nema poboljšanja. Patience brojač: 3/10
+Epoch [5/75] Loss: 0.3712 | T_Acc: 0.4625 | V_Acc: 0.1493 | V_F1: 0.2597
+   --> Nema poboljšanja. Patience brojač: 4/10
+Epoch [6/75] Loss: 0.3634 | T_Acc: 0.4590 | V_Acc: 0.1493 | V_F1: 0.2597
+   --> Nema poboljšanja. Patience brojač: 5/10

@@ -1,0 +1,65 @@
+Učitavanje težina iz: /home/ivanam/Seminar1/pretraining/ssl_checkpoints/efficientnet_b0_embryo_sslbs128_best.pth
+Težine EfficientNet-B0 su uspešno učitane (sa preimenovanjem ključeva).
+Klasifikacioni sloj je modifikovan na 2 izlaznih klasa.
+
+--- Analiza Trening Skupa (Originalno) ---
+Klasa 0 (Većinska): 459
+Klasa 1 (Manjinska): 79
+Koristi se faktor ponavljanja (minority_repeat_train): 5 (Optimalno: 6)
+Izračunate težine klase (za CrossEntropyLoss, Klasa 0:Klasa 1): 0.59:3.41
+Dataset inicijalizovan. Originalna veličina: 538. Efektivna veličina: 854.
+Dataset inicijalizovan. Originalna veličina: 134. Efektivna veličina: 134.
+
+TRENING SET (Efektivna veličina, oversampling): 854 uzoraka.
+VALIDACIONI SET (Originalna veličina): 134 uzoraka.
+Kriterijum (Loss): CrossEntropyLoss
+Optimizator: AdamW sa lr=0.0003
+Scheduler: StepLR (smanjuje LR tokom treninga)
+
+--- Pokretanje Supervised Finetuninga za model efficientnet_b0_finetuned ---
+Epoch [1/75] Loss: 0.6995 | T_Acc: 0.5222 | V_Acc: 0.8358 | V_F1: 0.0000
+   --> Nema poboljšanja. Patience brojač: 1/10
+Epoch [2/75] Loss: 0.6896 | T_Acc: 0.5152 | V_Acc: 0.8134 | V_F1: 0.1379
+   --> Sačuvan najbolji Finetuned model!
+Epoch [3/75] Loss: 0.6891 | T_Acc: 0.5410 | V_Acc: 0.8209 | V_F1: 0.1429
+   --> Sačuvan najbolji Finetuned model!
+Epoch [4/75] Loss: 0.6791 | T_Acc: 0.5492 | V_Acc: 0.8134 | V_F1: 0.3902
+   --> Sačuvan najbolji Finetuned model!
+Epoch [5/75] Loss: 0.6680 | T_Acc: 0.5867 | V_Acc: 0.7985 | V_F1: 0.4000
+   --> Sačuvan najbolji Finetuned model!
+Epoch [6/75] Loss: 0.6591 | T_Acc: 0.5902 | V_Acc: 0.7612 | V_F1: 0.4286
+   --> Sačuvan najbolji Finetuned model!
+Epoch [7/75] Loss: 0.6605 | T_Acc: 0.6054 | V_Acc: 0.7463 | V_F1: 0.4138
+   --> Nema poboljšanja. Patience brojač: 1/10
+Epoch [8/75] Loss: 0.6632 | T_Acc: 0.6148 | V_Acc: 0.7612 | V_F1: 0.4483
+   --> Sačuvan najbolji Finetuned model!
+Epoch [9/75] Loss: 0.6477 | T_Acc: 0.6323 | V_Acc: 0.7537 | V_F1: 0.4211
+   --> Nema poboljšanja. Patience brojač: 1/10
+Epoch [10/75] Loss: 0.6623 | T_Acc: 0.6253 | V_Acc: 0.7985 | V_F1: 0.4906
+   --> Sačuvan najbolji Finetuned model!
+Epoch [11/75] Loss: 0.6529 | T_Acc: 0.6194 | V_Acc: 0.7388 | V_F1: 0.4262
+   --> Nema poboljšanja. Patience brojač: 1/10
+Epoch [12/75] Loss: 0.6659 | T_Acc: 0.5785 | V_Acc: 0.7463 | V_F1: 0.4333
+   --> Nema poboljšanja. Patience brojač: 2/10
+Epoch [13/75] Loss: 0.6579 | T_Acc: 0.5937 | V_Acc: 0.7761 | V_F1: 0.4444
+   --> Nema poboljšanja. Patience brojač: 3/10
+Epoch [14/75] Loss: 0.6553 | T_Acc: 0.6007 | V_Acc: 0.7761 | V_F1: 0.4444
+   --> Nema poboljšanja. Patience brojač: 4/10
+Epoch [15/75] Loss: 0.6554 | T_Acc: 0.6077 | V_Acc: 0.7612 | V_F1: 0.4483
+   --> Nema poboljšanja. Patience brojač: 5/10
+Epoch [16/75] Loss: 0.6606 | T_Acc: 0.6089 | V_Acc: 0.7612 | V_F1: 0.4483
+   --> Nema poboljšanja. Patience brojač: 6/10
+Epoch [17/75] Loss: 0.6371 | T_Acc: 0.6335 | V_Acc: 0.7761 | V_F1: 0.4444
+   --> Nema poboljšanja. Patience brojač: 7/10
+Epoch [18/75] Loss: 0.6620 | T_Acc: 0.5937 | V_Acc: 0.7537 | V_F1: 0.4407
+   --> Nema poboljšanja. Patience brojač: 8/10
+Epoch [19/75] Loss: 0.6547 | T_Acc: 0.5972 | V_Acc: 0.7761 | V_F1: 0.4444
+   --> Nema poboljšanja. Patience brojač: 9/10
+Epoch [20/75] Loss: 0.6620 | T_Acc: 0.5925 | V_Acc: 0.7687 | V_F1: 0.4561
+   --> Nema poboljšanja. Patience brojač: 10/10
+
+! RANO ZAUSTAVLJANJE ! Validacioni F1 se nije poboljšao 10 epoha.
+
+--- Finetuning završen. ---
+Trening log sačuvan u: training/efficientNet/results/efficientnet_b0_finetuned_training_log.csv
+Test done.

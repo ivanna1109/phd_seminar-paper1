@@ -1,0 +1,16 @@
+Učitavanje težina iz: /home/ivanam/Seminar1/pretraining/ssl_checkpoints/mobilenet_v3_large_embryo_sslbs64_best.pth
+Težine EfficientNet-B0 su uspešno učitane (sa preimenovanjem ključeva).
+Klasifikacioni sloj MobileNetV3 je modifikovan na 2 izlaznih klasa.
+
+--- Analiza Trening Skupa (Originalno) ---
+Klasa 0 (Većinska): 459
+Klasa 1 (Manjinska): 79
+Koristi se faktor ponavljanja (minority_repeat_train): 2 (Optimalno: 6)
+Izračunate težine klase (za CrossEntropyLoss, Klasa 0:Klasa 1): 0.59:3.41
+Dataset inicijalizovan. Originalna veličina: 538. Efektivna veličina: 617.
+Dataset inicijalizovan. Originalna veličina: 134. Efektivna veličina: 134.
+
+TRENING SET (Efektivna veličina, oversampling): 617 uzoraka.
+VALIDACIONI SET (Originalna veličina): 134 uzoraka.
+Kriterijum (Loss): CrossEntropyLoss
+Test done.

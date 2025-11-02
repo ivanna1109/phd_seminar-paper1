@@ -1,0 +1,105 @@
+Učitavanje težina iz: /home/ivanam/Seminar1/pretraining/ssl_checkpoints/resnet18_embryo_sslbs128_best.pth
+Težine EfficientNet-B0 su uspešno učitane (sa preimenovanjem ključeva).
+Klasifikacioni sloj ResNet18 je modifikovan na 2 izlaznih klasa.
+
+--- Analiza Trening Skupa (Originalno) ---
+Klasa 0 (Većinska): 459
+Klasa 1 (Manjinska): 79
+Koristi se faktor ponavljanja (minority_repeat_train): 5 (Optimalno: 6)
+Izračunate težine klase (za CrossEntropyLoss, Klasa 0:Klasa 1): 0.59:3.41
+Dataset inicijalizovan. Originalna veličina: 538. Efektivna veličina: 854.
+Dataset inicijalizovan. Originalna veličina: 134. Efektivna veličina: 134.
+
+TRENING SET (Efektivna veličina, oversampling): 854 uzoraka.
+VALIDACIONI SET (Originalna veličina): 134 uzoraka.
+Kriterijum (Loss): CrossEntropyLoss
+Optimizator: AdamW sa lr=0.0003
+Scheduler: StepLR (smanjuje LR tokom treninga)
+
+--- Pokretanje Supervised Finetuninga za model resnet18_ssl_finetuned ---
+Epoch [1/75] Loss: 0.4618 | T_Acc: 0.5375 | V_Acc: 0.1493 | V_F1: 0.2597
+   --> Sačuvan najbolji Finetuned model!
+Epoch [2/75] Loss: 0.3456 | T_Acc: 0.6429 | V_Acc: 0.5896 | V_F1: 0.3820
+   --> Sačuvan najbolji Finetuned model!
+Epoch [3/75] Loss: 0.2747 | T_Acc: 0.7319 | V_Acc: 0.7985 | V_F1: 0.5091
+   --> Sačuvan najbolji Finetuned model!
+Epoch [4/75] Loss: 0.2434 | T_Acc: 0.7740 | V_Acc: 0.3955 | V_F1: 0.3193
+   --> Nema poboljšanja. Patience brojač: 1/20
+Epoch [5/75] Loss: 0.1912 | T_Acc: 0.8431 | V_Acc: 0.8657 | V_F1: 0.5909
+   --> Sačuvan najbolji Finetuned model!
+Epoch [6/75] Loss: 0.1910 | T_Acc: 0.8407 | V_Acc: 0.6045 | V_F1: 0.3908
+   --> Nema poboljšanja. Patience brojač: 1/20
+Epoch [7/75] Loss: 0.1660 | T_Acc: 0.8583 | V_Acc: 0.8358 | V_F1: 0.5926
+   --> Sačuvan najbolji Finetuned model!
+Epoch [8/75] Loss: 0.1115 | T_Acc: 0.8970 | V_Acc: 0.8433 | V_F1: 0.6182
+   --> Sačuvan najbolji Finetuned model!
+Epoch [9/75] Loss: 0.0867 | T_Acc: 0.9344 | V_Acc: 0.8284 | V_F1: 0.5818
+   --> Nema poboljšanja. Patience brojač: 1/20
+Epoch [10/75] Loss: 0.0749 | T_Acc: 0.9438 | V_Acc: 0.8657 | V_F1: 0.6087
+   --> Nema poboljšanja. Patience brojač: 2/20
+Epoch [11/75] Loss: 0.0624 | T_Acc: 0.9508 | V_Acc: 0.8731 | V_F1: 0.6222
+   --> Sačuvan najbolji Finetuned model!
+Epoch [12/75] Loss: 0.0652 | T_Acc: 0.9555 | V_Acc: 0.8657 | V_F1: 0.5909
+   --> Nema poboljšanja. Patience brojač: 1/20
+Epoch [13/75] Loss: 0.0578 | T_Acc: 0.9625 | V_Acc: 0.8657 | V_F1: 0.5909
+   --> Nema poboljšanja. Patience brojač: 2/20
+Epoch [14/75] Loss: 0.0500 | T_Acc: 0.9625 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Sačuvan najbolji Finetuned model!
+Epoch [15/75] Loss: 0.0502 | T_Acc: 0.9602 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Nema poboljšanja. Patience brojač: 1/20
+Epoch [16/75] Loss: 0.0465 | T_Acc: 0.9672 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Nema poboljšanja. Patience brojač: 2/20
+Epoch [17/75] Loss: 0.0436 | T_Acc: 0.9696 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Nema poboljšanja. Patience brojač: 3/20
+Epoch [18/75] Loss: 0.0496 | T_Acc: 0.9649 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Nema poboljšanja. Patience brojač: 4/20
+Epoch [19/75] Loss: 0.0486 | T_Acc: 0.9625 | V_Acc: 0.8657 | V_F1: 0.5909
+   --> Nema poboljšanja. Patience brojač: 5/20
+Epoch [20/75] Loss: 0.0463 | T_Acc: 0.9660 | V_Acc: 0.8806 | V_F1: 0.6522
+   --> Sačuvan najbolji Finetuned model!
+Epoch [21/75] Loss: 0.0413 | T_Acc: 0.9614 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Nema poboljšanja. Patience brojač: 1/20
+Epoch [22/75] Loss: 0.0417 | T_Acc: 0.9684 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Nema poboljšanja. Patience brojač: 2/20
+Epoch [23/75] Loss: 0.0553 | T_Acc: 0.9590 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Nema poboljšanja. Patience brojač: 3/20
+Epoch [24/75] Loss: 0.0489 | T_Acc: 0.9660 | V_Acc: 0.8731 | V_F1: 0.6222
+   --> Nema poboljšanja. Patience brojač: 4/20
+Epoch [25/75] Loss: 0.0383 | T_Acc: 0.9719 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Nema poboljšanja. Patience brojač: 5/20
+Epoch [26/75] Loss: 0.0492 | T_Acc: 0.9660 | V_Acc: 0.8657 | V_F1: 0.5909
+   --> Nema poboljšanja. Patience brojač: 6/20
+Epoch [27/75] Loss: 0.0439 | T_Acc: 0.9672 | V_Acc: 0.8657 | V_F1: 0.5909
+   --> Nema poboljšanja. Patience brojač: 7/20
+Epoch [28/75] Loss: 0.0509 | T_Acc: 0.9649 | V_Acc: 0.8657 | V_F1: 0.6087
+   --> Nema poboljšanja. Patience brojač: 8/20
+Epoch [29/75] Loss: 0.0440 | T_Acc: 0.9696 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Nema poboljšanja. Patience brojač: 9/20
+Epoch [30/75] Loss: 0.0510 | T_Acc: 0.9625 | V_Acc: 0.8806 | V_F1: 0.6522
+   --> Nema poboljšanja. Patience brojač: 10/20
+Epoch [31/75] Loss: 0.0536 | T_Acc: 0.9625 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Nema poboljšanja. Patience brojač: 11/20
+Epoch [32/75] Loss: 0.0505 | T_Acc: 0.9696 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Nema poboljšanja. Patience brojač: 12/20
+Epoch [33/75] Loss: 0.0439 | T_Acc: 0.9707 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Nema poboljšanja. Patience brojač: 13/20
+Epoch [34/75] Loss: 0.0407 | T_Acc: 0.9719 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Nema poboljšanja. Patience brojač: 14/20
+Epoch [35/75] Loss: 0.0345 | T_Acc: 0.9742 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Nema poboljšanja. Patience brojač: 15/20
+Epoch [36/75] Loss: 0.0413 | T_Acc: 0.9684 | V_Acc: 0.8657 | V_F1: 0.5909
+   --> Nema poboljšanja. Patience brojač: 16/20
+Epoch [37/75] Loss: 0.0429 | T_Acc: 0.9696 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Nema poboljšanja. Patience brojač: 17/20
+Epoch [38/75] Loss: 0.0454 | T_Acc: 0.9672 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Nema poboljšanja. Patience brojač: 18/20
+Epoch [39/75] Loss: 0.0474 | T_Acc: 0.9719 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Nema poboljšanja. Patience brojač: 19/20
+Epoch [40/75] Loss: 0.0587 | T_Acc: 0.9590 | V_Acc: 0.8731 | V_F1: 0.6383
+   --> Nema poboljšanja. Patience brojač: 20/20
+
+! RANO ZAUSTAVLJANJE ! Validacioni F1 se nije poboljšao 20 epoha.
+
+--- Finetuning završen. ---
+Trening log sačuvan u: training/resNet/results/resnet18_ssl_finetuned_training_log.csv
+Test done.

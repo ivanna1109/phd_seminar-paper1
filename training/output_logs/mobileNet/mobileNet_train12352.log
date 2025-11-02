@@ -1,0 +1,45 @@
+Učitavanje težina iz: /home/ivanam/Seminar1/pretraining/ssl_checkpoints/mobilenet_v3_large_embryo_sslbs64_best.pth
+Težine EfficientNet-B0 su uspešno učitane (sa preimenovanjem ključeva).
+Klasifikacioni sloj MobileNetV3 je modifikovan na 2 izlaznih klasa.
+
+--- Analiza Trening Skupa (Originalno) ---
+Klasa 0 (Većinska): 459
+Klasa 1 (Manjinska): 79
+Koristi se faktor ponavljanja (minority_repeat_train): 2 (Optimalno: 6)
+Izračunate težine klase (za CrossEntropyLoss, Klasa 0:Klasa 1): 0.59:3.41
+Dataset inicijalizovan. Originalna veličina: 538. Efektivna veličina: 617.
+Dataset inicijalizovan. Originalna veličina: 134. Efektivna veličina: 134.
+
+TRENING SET (Efektivna veličina, oversampling): 617 uzoraka.
+VALIDACIONI SET (Originalna veličina): 134 uzoraka.
+Kriterijum (Loss): CrossEntropyLoss
+Scheduler: StepLR (smanjuje LR tokom treninga)
+
+--- Pokretanje Supervised Finetuninga za model mobilenet_v3_large_ssl_finetuned_new_without_CW ---
+Epoch [1/75] Loss: 0.6231 | T_Acc: 0.7391 | V_Acc: 0.8507 | V_F1: 0.0000
+   --> Nema poboljšanja. Patience brojač: 1/10
+Epoch [2/75] Loss: 0.5781 | T_Acc: 0.7407 | V_Acc: 0.8507 | V_F1: 0.0000
+   --> Nema poboljšanja. Patience brojač: 2/10
+Epoch [3/75] Loss: 0.5606 | T_Acc: 0.7439 | V_Acc: 0.8507 | V_F1: 0.0000
+   --> Nema poboljšanja. Patience brojač: 3/10
+Epoch [4/75] Loss: 0.5624 | T_Acc: 0.7439 | V_Acc: 0.8507 | V_F1: 0.0000
+   --> Nema poboljšanja. Patience brojač: 4/10
+Epoch [5/75] Loss: 0.5659 | T_Acc: 0.7439 | V_Acc: 0.8507 | V_F1: 0.0000
+   --> Nema poboljšanja. Patience brojač: 5/10
+Epoch [6/75] Loss: 0.5725 | T_Acc: 0.7439 | V_Acc: 0.8507 | V_F1: 0.0000
+   --> Nema poboljšanja. Patience brojač: 6/10
+Epoch [7/75] Loss: 0.5589 | T_Acc: 0.7439 | V_Acc: 0.8507 | V_F1: 0.0000
+   --> Nema poboljšanja. Patience brojač: 7/10
+Epoch [8/75] Loss: 0.5583 | T_Acc: 0.7439 | V_Acc: 0.8507 | V_F1: 0.0000
+   --> Nema poboljšanja. Patience brojač: 8/10
+Epoch [9/75] Loss: 0.5706 | T_Acc: 0.7439 | V_Acc: 0.8507 | V_F1: 0.0000
+   --> Nema poboljšanja. Patience brojač: 9/10
+Epoch [10/75] Loss: 0.5573 | T_Acc: 0.7439 | V_Acc: 0.8507 | V_F1: 0.0000
+   --> Nema poboljšanja. Patience brojač: 10/10
+
+! RANO ZAUSTAVLJANJE ! Validacioni F1 se nije poboljšao 10 epoha.
+
+--- Finetuning završen. ---
+   --> Sačuvan najbolji Finetuned model!
+Trening log sačuvan u: training/mobileNet/results/mobilenet_v3_large_ssl_finetuned_new_without_CW_training_log.csv
+Test done.

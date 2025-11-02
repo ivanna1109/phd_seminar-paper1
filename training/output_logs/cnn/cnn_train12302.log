@@ -1,0 +1,75 @@
+
+Koristi se uređaj: cpu
+
+--- Analiza Trening Skupa (Originalno) ---
+Klasa 0 (Većinska): 459
+Klasa 1 (Manjinska): 79
+Koristi se faktor ponavljanja (minority_repeat_train): 5 (Optimalno: 6)
+Izračunate težine klase (za CrossEntropyLoss, Klasa 0:Klasa 1): 0.59:3.41
+Dataset inicijalizovan. Originalna veličina: 538. Efektivna veličina: 854.
+Dataset inicijalizovan. Originalna veličina: 134. Efektivna veličina: 134.
+
+TRENING SET (Efektivna veličina, oversampling): 854 uzoraka.
+VALIDACIONI SET (Originalna veličina): 134 uzoraka.
+
+--- Pokretanje Supervised Treninga za Baseline model SimpleCNN ---
+Epoch [1/50] Loss: 0.5111 | T_Acc: 0.4719 | V_Acc: 0.1493 | V_F1: 0.2597
+   --> Sačuvan najbolji Baseline model!
+Epoch [2/50] Loss: 0.4598 | T_Acc: 0.4637 | V_Acc: 0.3358 | V_F1: 0.3101
+   --> Sačuvan najbolji Baseline model!
+Epoch [3/50] Loss: 0.3687 | T_Acc: 0.5129 | V_Acc: 0.1642 | V_F1: 0.2632
+Epoch [4/50] Loss: 0.4063 | T_Acc: 0.5773 | V_Acc: 0.4552 | V_F1: 0.3423
+   --> Sačuvan najbolji Baseline model!
+Epoch [5/50] Loss: 0.3667 | T_Acc: 0.5820 | V_Acc: 0.6791 | V_F1: 0.4416
+   --> Sačuvan najbolji Baseline model!
+Epoch [6/50] Loss: 0.3449 | T_Acc: 0.6171 | V_Acc: 0.6716 | V_F1: 0.4054
+Epoch [7/50] Loss: 0.3374 | T_Acc: 0.5984 | V_Acc: 0.5597 | V_F1: 0.4040
+Epoch [8/50] Loss: 0.3180 | T_Acc: 0.6511 | V_Acc: 0.8806 | V_F1: 0.4667
+   --> Sačuvan najbolji Baseline model!
+Epoch [9/50] Loss: 0.3432 | T_Acc: 0.6838 | V_Acc: 0.5672 | V_F1: 0.3958
+Epoch [10/50] Loss: 0.3242 | T_Acc: 0.6581 | V_Acc: 0.2164 | V_F1: 0.2759
+Epoch [11/50] Loss: 0.3123 | T_Acc: 0.7026 | V_Acc: 0.5224 | V_F1: 0.3846
+Epoch [12/50] Loss: 0.3017 | T_Acc: 0.6733 | V_Acc: 0.6791 | V_F1: 0.4557
+Epoch [13/50] Loss: 0.3123 | T_Acc: 0.7002 | V_Acc: 0.8358 | V_F1: 0.5926
+   --> Sačuvan najbolji Baseline model!
+Epoch [14/50] Loss: 0.3077 | T_Acc: 0.6604 | V_Acc: 0.7537 | V_F1: 0.5217
+Epoch [15/50] Loss: 0.2822 | T_Acc: 0.6909 | V_Acc: 0.6418 | V_F1: 0.4146
+Epoch [16/50] Loss: 0.3029 | T_Acc: 0.7061 | V_Acc: 0.2463 | V_F1: 0.2837
+Epoch [17/50] Loss: 0.2933 | T_Acc: 0.6768 | V_Acc: 0.5746 | V_F1: 0.3871
+Epoch [18/50] Loss: 0.2638 | T_Acc: 0.7377 | V_Acc: 0.7836 | V_F1: 0.5246
+Epoch [19/50] Loss: 0.3014 | T_Acc: 0.6956 | V_Acc: 0.5373 | V_F1: 0.3673
+Epoch [20/50] Loss: 0.2635 | T_Acc: 0.7342 | V_Acc: 0.7388 | V_F1: 0.4928
+Epoch [21/50] Loss: 0.2777 | T_Acc: 0.7377 | V_Acc: 0.4776 | V_F1: 0.3519
+Epoch [22/50] Loss: 0.2647 | T_Acc: 0.7412 | V_Acc: 0.2761 | V_F1: 0.2920
+Epoch [23/50] Loss: 0.2519 | T_Acc: 0.7225 | V_Acc: 0.8134 | V_F1: 0.5763
+Epoch [24/50] Loss: 0.2613 | T_Acc: 0.7752 | V_Acc: 0.5299 | V_F1: 0.3883
+Epoch [25/50] Loss: 0.2513 | T_Acc: 0.7588 | V_Acc: 0.5448 | V_F1: 0.3711
+Epoch [26/50] Loss: 0.2420 | T_Acc: 0.7635 | V_Acc: 0.7239 | V_F1: 0.4932
+Epoch [27/50] Loss: 0.2365 | T_Acc: 0.7869 | V_Acc: 0.7388 | V_F1: 0.4928
+Epoch [28/50] Loss: 0.2260 | T_Acc: 0.8033 | V_Acc: 0.7164 | V_F1: 0.4865
+Epoch [29/50] Loss: 0.2152 | T_Acc: 0.7927 | V_Acc: 0.5970 | V_F1: 0.3864
+Epoch [30/50] Loss: 0.2165 | T_Acc: 0.8138 | V_Acc: 0.7164 | V_F1: 0.4571
+Epoch [31/50] Loss: 0.2158 | T_Acc: 0.7834 | V_Acc: 0.7537 | V_F1: 0.5075
+Epoch [32/50] Loss: 0.2353 | T_Acc: 0.8009 | V_Acc: 0.3731 | V_F1: 0.3226
+Epoch [33/50] Loss: 0.2244 | T_Acc: 0.7670 | V_Acc: 0.6343 | V_F1: 0.3951
+Epoch [34/50] Loss: 0.1969 | T_Acc: 0.8290 | V_Acc: 0.6493 | V_F1: 0.4471
+Epoch [35/50] Loss: 0.1854 | T_Acc: 0.8244 | V_Acc: 0.6940 | V_F1: 0.4675
+Epoch [36/50] Loss: 0.2043 | T_Acc: 0.8044 | V_Acc: 0.7761 | V_F1: 0.4828
+Epoch [37/50] Loss: 0.1853 | T_Acc: 0.8290 | V_Acc: 0.6791 | V_F1: 0.4557
+Epoch [38/50] Loss: 0.1854 | T_Acc: 0.8255 | V_Acc: 0.6791 | V_F1: 0.4110
+Epoch [39/50] Loss: 0.1827 | T_Acc: 0.8372 | V_Acc: 0.6642 | V_F1: 0.4304
+Epoch [40/50] Loss: 0.1678 | T_Acc: 0.8536 | V_Acc: 0.6940 | V_F1: 0.4533
+Epoch [41/50] Loss: 0.1654 | T_Acc: 0.8595 | V_Acc: 0.7164 | V_F1: 0.4571
+Epoch [42/50] Loss: 0.1637 | T_Acc: 0.8665 | V_Acc: 0.7463 | V_F1: 0.4516
+Epoch [43/50] Loss: 0.1592 | T_Acc: 0.8595 | V_Acc: 0.6866 | V_F1: 0.4324
+Epoch [44/50] Loss: 0.1569 | T_Acc: 0.8665 | V_Acc: 0.7313 | V_F1: 0.4194
+Epoch [45/50] Loss: 0.1742 | T_Acc: 0.8595 | V_Acc: 0.7537 | V_F1: 0.4407
+Epoch [46/50] Loss: 0.1674 | T_Acc: 0.8630 | V_Acc: 0.7313 | V_F1: 0.4545
+Epoch [47/50] Loss: 0.1612 | T_Acc: 0.8501 | V_Acc: 0.7388 | V_F1: 0.4928
+Epoch [48/50] Loss: 0.1560 | T_Acc: 0.8689 | V_Acc: 0.7463 | V_F1: 0.4516
+Epoch [49/50] Loss: 0.1507 | T_Acc: 0.8735 | V_Acc: 0.7612 | V_F1: 0.4839
+Epoch [50/50] Loss: 0.1581 | T_Acc: 0.8700 | V_Acc: 0.7388 | V_F1: 0.4615
+
+--- Supervised Trening završen. ---
+Trening log sačuvan u: training/baseline_cnn/train_res/SimpleCNN_training_log.csv
+Test done.
