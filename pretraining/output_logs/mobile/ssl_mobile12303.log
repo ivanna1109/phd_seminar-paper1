@@ -1,0 +1,221 @@
+SSL Dataset inicijalizovan. Originalna veličina: 672. Efektivna veličina (balansirana): 1068.
+
+DataLoader spreman. Broj batch-eva po epohi: 17
+Sledeći korak: Definisanje EmbryoNet/ResNet modela i pokretanje faze predučenja (pre-training)!
+
+--- Inicijalizacija baseline modela za test ---
+1. Simple CNN: Broj parametara: 2,228,098
+2. ResNet-18: Broj parametara: 11,177,538
+3. MobileNetV3: Broj parametara: 4,204,594
+4. EfficientNet-B0: Broj parametara: 4,010,110
+
+Modeli su uspešno definisani i spremni za upotrebu u trening petlji.
+
+Koristi se uređaj: cpu
+Pribavljamo model mobileNet_v3_large...
+Upozorenje: Nije definisana veličina batch-a za BarlowTwinsLoss.
+
+--- Pokretanje Self-Supervised Predučenja (Barlow Twins) ---
+Epoch [1/100] Avg Loss: 2521.8695 | LR: 0.000566
+   [STOP] Loss poboljšan sa inf na 2521.8695. Resetujem pult.
+Epoch [2/100] Avg Loss: 2316.0451 | LR: 0.001165
+   [STOP] Loss poboljšan sa 2521.8695 na 2316.0451. Resetujem pult.
+Epoch [3/100] Avg Loss: 2290.4841 | LR: 0.001765
+   [STOP] Loss poboljšan sa 2316.0451 na 2290.4841. Resetujem pult.
+Epoch [4/100] Avg Loss: 2537.9695 | LR: 0.002365
+ [STOP] Loss nije poboljšan. Pult: 1/50
+Epoch [5/100] Avg Loss: 2478.2335 | LR: 0.002965
+ [STOP] Loss nije poboljšan. Pult: 2/50
+Epoch [6/100] Avg Loss: 2192.1695 | LR: 0.002964
+   [STOP] Loss poboljšan sa 2290.4841 na 2192.1695. Resetujem pult.
+Epoch [7/100] Avg Loss: 2400.8538 | LR: 0.002962
+ [STOP] Loss nije poboljšan. Pult: 1/50
+Epoch [8/100] Avg Loss: 2204.1823 | LR: 0.002958
+ [STOP] Loss nije poboljšan. Pult: 2/50
+Epoch [9/100] Avg Loss: 2446.8974 | LR: 0.002953
+ [STOP] Loss nije poboljšan. Pult: 3/50
+Epoch [10/100] Avg Loss: 3205.4665 | LR: 0.002946
+ [STOP] Loss nije poboljšan. Pult: 4/50
+Epoch [11/100] Avg Loss: 2469.6420 | LR: 0.002938
+ [STOP] Loss nije poboljšan. Pult: 5/50
+Epoch [12/100] Avg Loss: 2173.8451 | LR: 0.002929
+   [STOP] Loss poboljšan sa 2192.1695 na 2173.8451. Resetujem pult.
+Epoch [13/100] Avg Loss: 2969.2820 | LR: 0.002918
+ [STOP] Loss nije poboljšan. Pult: 1/50
+Epoch [14/100] Avg Loss: 2613.1167 | LR: 0.002906
+ [STOP] Loss nije poboljšan. Pult: 2/50
+Epoch [15/100] Avg Loss: 2469.9557 | LR: 0.002892
+ [STOP] Loss nije poboljšan. Pult: 3/50
+Epoch [16/100] Avg Loss: 2606.6616 | LR: 0.002877
+ [STOP] Loss nije poboljšan. Pult: 4/50
+Epoch [17/100] Avg Loss: 2212.0313 | LR: 0.002861
+ [STOP] Loss nije poboljšan. Pult: 5/50
+Epoch [18/100] Avg Loss: 2212.2076 | LR: 0.002843
+ [STOP] Loss nije poboljšan. Pult: 6/50
+Epoch [19/100] Avg Loss: 2121.9254 | LR: 0.002824
+   [STOP] Loss poboljšan sa 2173.8451 na 2121.9254. Resetujem pult.
+Epoch [20/100] Avg Loss: 2354.6650 | LR: 0.002803
+ [STOP] Loss nije poboljšan. Pult: 1/50
+Epoch [21/100] Avg Loss: 2210.8749 | LR: 0.002781
+ [STOP] Loss nije poboljšan. Pult: 2/50
+Epoch [22/100] Avg Loss: 2130.6038 | LR: 0.002758
+ [STOP] Loss nije poboljšan. Pult: 3/50
+Epoch [23/100] Avg Loss: 2348.5598 | LR: 0.002734
+ [STOP] Loss nije poboljšan. Pult: 4/50
+Epoch [24/100] Avg Loss: 2154.4491 | LR: 0.002708
+ [STOP] Loss nije poboljšan. Pult: 5/50
+Epoch [25/100] Avg Loss: 2392.9485 | LR: 0.002682
+ [STOP] Loss nije poboljšan. Pult: 6/50
+Epoch [26/100] Avg Loss: 2478.1605 | LR: 0.002654
+ [STOP] Loss nije poboljšan. Pult: 7/50
+Epoch [27/100] Avg Loss: 2346.6550 | LR: 0.002625
+ [STOP] Loss nije poboljšan. Pult: 8/50
+Epoch [28/100] Avg Loss: 2224.6314 | LR: 0.002594
+ [STOP] Loss nije poboljšan. Pult: 9/50
+Epoch [29/100] Avg Loss: 2122.4594 | LR: 0.002563
+ [STOP] Loss nije poboljšan. Pult: 10/50
+Epoch [30/100] Avg Loss: 2393.2423 | LR: 0.002531
+ [STOP] Loss nije poboljšan. Pult: 11/50
+Epoch [31/100] Avg Loss: 2388.1284 | LR: 0.002497
+ [STOP] Loss nije poboljšan. Pult: 12/50
+Epoch [32/100] Avg Loss: 2424.7219 | LR: 0.002463
+ [STOP] Loss nije poboljšan. Pult: 13/50
+Epoch [33/100] Avg Loss: 2419.3938 | LR: 0.002427
+ [STOP] Loss nije poboljšan. Pult: 14/50
+Epoch [34/100] Avg Loss: 2334.9074 | LR: 0.002391
+ [STOP] Loss nije poboljšan. Pult: 15/50
+Epoch [35/100] Avg Loss: 2472.3606 | LR: 0.002354
+ [STOP] Loss nije poboljšan. Pult: 16/50
+Epoch [36/100] Avg Loss: 2530.9731 | LR: 0.002316
+ [STOP] Loss nije poboljšan. Pult: 17/50
+Epoch [37/100] Avg Loss: 2367.1043 | LR: 0.002277
+ [STOP] Loss nije poboljšan. Pult: 18/50
+Epoch [38/100] Avg Loss: 2462.9674 | LR: 0.002237
+ [STOP] Loss nije poboljšan. Pult: 19/50
+Epoch [39/100] Avg Loss: 2461.0297 | LR: 0.002197
+ [STOP] Loss nije poboljšan. Pult: 20/50
+Epoch [40/100] Avg Loss: 2240.5633 | LR: 0.002156
+ [STOP] Loss nije poboljšan. Pult: 21/50
+Epoch [41/100] Avg Loss: 2325.8804 | LR: 0.002114
+ [STOP] Loss nije poboljšan. Pult: 22/50
+Epoch [42/100] Avg Loss: 2508.7455 | LR: 0.002071
+ [STOP] Loss nije poboljšan. Pult: 23/50
+Epoch [43/100] Avg Loss: 2306.2812 | LR: 0.002028
+ [STOP] Loss nije poboljšan. Pult: 24/50
+Epoch [44/100] Avg Loss: 2336.5271 | LR: 0.001985
+ [STOP] Loss nije poboljšan. Pult: 25/50
+Epoch [45/100] Avg Loss: 2357.7395 | LR: 0.001941
+ [STOP] Loss nije poboljšan. Pult: 26/50
+Epoch [46/100] Avg Loss: 2384.3894 | LR: 0.001896
+ [STOP] Loss nije poboljšan. Pult: 27/50
+Epoch [47/100] Avg Loss: 2430.5740 | LR: 0.001851
+ [STOP] Loss nije poboljšan. Pult: 28/50
+Epoch [48/100] Avg Loss: 2234.3620 | LR: 0.001806
+ [STOP] Loss nije poboljšan. Pult: 29/50
+Epoch [49/100] Avg Loss: 2316.6270 | LR: 0.001761
+ [STOP] Loss nije poboljšan. Pult: 30/50
+Epoch [50/100] Avg Loss: 2518.2496 | LR: 0.001715
+ [STOP] Loss nije poboljšan. Pult: 31/50
+Epoch [51/100] Avg Loss: 2298.5776 | LR: 0.001669
+ [STOP] Loss nije poboljšan. Pult: 32/50
+Epoch [52/100] Avg Loss: 2545.4787 | LR: 0.001622
+ [STOP] Loss nije poboljšan. Pult: 33/50
+Epoch [53/100] Avg Loss: 2086.3161 | LR: 0.001576
+   [STOP] Loss poboljšan sa 2121.9254 na 2086.3161. Resetujem pult.
+Epoch [54/100] Avg Loss: 2444.7907 | LR: 0.001529
+ [STOP] Loss nije poboljšan. Pult: 1/50
+Epoch [55/100] Avg Loss: 2374.7843 | LR: 0.001483
+ [STOP] Loss nije poboljšan. Pult: 2/50
+Epoch [56/100] Avg Loss: 2138.1416 | LR: 0.001436
+ [STOP] Loss nije poboljšan. Pult: 3/50
+Epoch [57/100] Avg Loss: 2249.6980 | LR: 0.001390
+ [STOP] Loss nije poboljšan. Pult: 4/50
+Epoch [58/100] Avg Loss: 2784.8815 | LR: 0.001343
+ [STOP] Loss nije poboljšan. Pult: 5/50
+Epoch [59/100] Avg Loss: 2221.9824 | LR: 0.001297
+ [STOP] Loss nije poboljšan. Pult: 6/50
+Epoch [60/100] Avg Loss: 2207.7908 | LR: 0.001251
+ [STOP] Loss nije poboljšan. Pult: 7/50
+Epoch [61/100] Avg Loss: 2469.0511 | LR: 0.001205
+ [STOP] Loss nije poboljšan. Pult: 8/50
+Epoch [62/100] Avg Loss: 2390.3185 | LR: 0.001160
+ [STOP] Loss nije poboljšan. Pult: 9/50
+Epoch [63/100] Avg Loss: 2154.4193 | LR: 0.001114
+ [STOP] Loss nije poboljšan. Pult: 10/50
+Epoch [64/100] Avg Loss: 2544.1622 | LR: 0.001069
+ [STOP] Loss nije poboljšan. Pult: 11/50
+Epoch [65/100] Avg Loss: 2340.2037 | LR: 0.001025
+ [STOP] Loss nije poboljšan. Pult: 12/50
+Epoch [66/100] Avg Loss: 2297.0352 | LR: 0.000981
+ [STOP] Loss nije poboljšan. Pult: 13/50
+Epoch [67/100] Avg Loss: 2360.3933 | LR: 0.000937
+ [STOP] Loss nije poboljšan. Pult: 14/50
+Epoch [68/100] Avg Loss: 2090.9590 | LR: 0.000894
+ [STOP] Loss nije poboljšan. Pult: 15/50
+Epoch [69/100] Avg Loss: 2351.3543 | LR: 0.000852
+ [STOP] Loss nije poboljšan. Pult: 16/50
+Epoch [70/100] Avg Loss: 2342.9620 | LR: 0.000810
+ [STOP] Loss nije poboljšan. Pult: 17/50
+Epoch [71/100] Avg Loss: 2336.8113 | LR: 0.000769
+ [STOP] Loss nije poboljšan. Pult: 18/50
+Epoch [72/100] Avg Loss: 2240.0812 | LR: 0.000729
+ [STOP] Loss nije poboljšan. Pult: 19/50
+Epoch [73/100] Avg Loss: 2410.6201 | LR: 0.000689
+ [STOP] Loss nije poboljšan. Pult: 20/50
+Epoch [74/100] Avg Loss: 2122.6452 | LR: 0.000650
+ [STOP] Loss nije poboljšan. Pult: 21/50
+Epoch [75/100] Avg Loss: 2227.1502 | LR: 0.000612
+ [STOP] Loss nije poboljšan. Pult: 22/50
+Epoch [76/100] Avg Loss: 2234.4504 | LR: 0.000575
+ [STOP] Loss nije poboljšan. Pult: 23/50
+Epoch [77/100] Avg Loss: 2061.7432 | LR: 0.000538
+   [STOP] Loss poboljšan sa 2086.3161 na 2061.7432. Resetujem pult.
+Epoch [78/100] Avg Loss: 2279.3457 | LR: 0.000503
+ [STOP] Loss nije poboljšan. Pult: 1/50
+Epoch [79/100] Avg Loss: 2175.5908 | LR: 0.000468
+ [STOP] Loss nije poboljšan. Pult: 2/50
+Epoch [80/100] Avg Loss: 2292.5082 | LR: 0.000435
+ [STOP] Loss nije poboljšan. Pult: 3/50
+Epoch [81/100] Avg Loss: 2506.0724 | LR: 0.000403
+ [STOP] Loss nije poboljšan. Pult: 4/50
+Epoch [82/100] Avg Loss: 2411.1790 | LR: 0.000371
+ [STOP] Loss nije poboljšan. Pult: 5/50
+Epoch [83/100] Avg Loss: 2064.9945 | LR: 0.000341
+ [STOP] Loss nije poboljšan. Pult: 6/50
+Epoch [84/100] Avg Loss: 2330.9326 | LR: 0.000312
+ [STOP] Loss nije poboljšan. Pult: 7/50
+Epoch [85/100] Avg Loss: 2173.6113 | LR: 0.000284
+ [STOP] Loss nije poboljšan. Pult: 8/50
+Epoch [86/100] Avg Loss: 2166.7397 | LR: 0.000257
+ [STOP] Loss nije poboljšan. Pult: 9/50
+Epoch [87/100] Avg Loss: 2263.6495 | LR: 0.000232
+ [STOP] Loss nije poboljšan. Pult: 10/50
+Epoch [88/100] Avg Loss: 2478.2603 | LR: 0.000207
+ [STOP] Loss nije poboljšan. Pult: 11/50
+Epoch [89/100] Avg Loss: 2199.4422 | LR: 0.000184
+ [STOP] Loss nije poboljšan. Pult: 12/50
+Epoch [90/100] Avg Loss: 2558.4250 | LR: 0.000163
+ [STOP] Loss nije poboljšan. Pult: 13/50
+Epoch [91/100] Avg Loss: 2337.0175 | LR: 0.000142
+ [STOP] Loss nije poboljšan. Pult: 14/50
+Epoch [92/100] Avg Loss: 2137.1536 | LR: 0.000123
+ [STOP] Loss nije poboljšan. Pult: 15/50
+Epoch [93/100] Avg Loss: 2439.1600 | LR: 0.000105
+ [STOP] Loss nije poboljšan. Pult: 16/50
+Epoch [94/100] Avg Loss: 2512.9329 | LR: 0.000089
+ [STOP] Loss nije poboljšan. Pult: 17/50
+Epoch [95/100] Avg Loss: 2420.8775 | LR: 0.000074
+ [STOP] Loss nije poboljšan. Pult: 18/50
+Epoch [96/100] Avg Loss: 2194.8676 | LR: 0.000060
+ [STOP] Loss nije poboljšan. Pult: 19/50
+Epoch [97/100] Avg Loss: 2174.8557 | LR: 0.000048
+ [STOP] Loss nije poboljšan. Pult: 20/50
+Epoch [98/100] Avg Loss: 2236.0140 | LR: 0.000037
+ [STOP] Loss nije poboljšan. Pult: 21/50
+Epoch [99/100] Avg Loss: 2164.8566 | LR: 0.000027
+ [STOP] Loss nije poboljšan. Pult: 22/50
+Epoch [100/100] Avg Loss: 2051.5098 | LR: 0.000019
+   [STOP] Loss poboljšan sa 2061.7432 na 2051.5098. Resetujem pult.
+
+Predučeni enkoder sačuvan u: pretraining/ssl_checkpoints/mobilenet_v3_large_embryo_ssl.pth
+Test done.
