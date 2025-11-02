@@ -1,0 +1,18 @@
+Učitavam slike iz: raw_data/train/0
+Učitavam slike iz: raw_data/train/1
+672
+Train shape (672, 5)
+--- Broj klasa u trening skupu ---
+Klasa 0: 573
+Klasa 1: 99
+---------------------------------
+
+--- Učitavanje test podataka ---
+Učitavam slike iz: raw_data/test/0
+Učitavam slike iz: raw_data/test/1
+168
+Test shape (168, 5)
+--- Broj klasa u test skupu ---
+Klasa 0: 143
+Klasa 1: 25
+---------------------------------
