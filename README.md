@@ -12,7 +12,7 @@ The project involves **comparative analysis of several architectures** (includin
   * **`localWork/`**
     * **`data_processing/`**
         * Contains scripts responsible for **processing raw data**, **(EDA)**, data transformation and visualization, and creating the final parquet files for train and test sets
-    * ** `img/`** - plots from EDA file
+    * **`img/`** - plots from EDA file
   * **`models/`** - definition of used models
   * **`pretraining/`** - dirs and files related to pretraining task of SSL
   * **`training/`** - dirs and files related to training process of every model
