@@ -1,5 +1,5 @@
 # PhD Studies - Subject: Seminar Paper 1
-## Topic - Analysis of Self-Supervised Approach for Human's Embryo Image Classification
+## Topic - Evaluation of Self-Supervised Learning Approach and Deep Convolutional Networks for Classification of Human Embryo Images
 
 ## Overview
 
@@ -12,7 +12,7 @@ The project involves **comparative analysis of several architectures** (includin
   * **`localWork/`**
     * **`data_processing/`**
         * Contains scripts responsible for **processing raw data**, **(EDA)**, data transformation and visualization, and creating the final parquet files for train and test sets
-    * **`img/`** - plots from EDA file
+    * **`imgs/`** - plots from EDA file
   * **`models/`** - definition of used models
   * **`pretraining/`** - dirs and files related to pretraining task of SSL
   * **`training/`** - dirs and files related to training process of every model
